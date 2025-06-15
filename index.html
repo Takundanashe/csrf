@@ -12,6 +12,7 @@
     function sendRequest() {
       fetch("https://console.neon.tech/api/v2/users/me", {
         method: "PATCH",
+        credentials: "include", 
         headers: {
           "Content-Type": "application/json"
         },
